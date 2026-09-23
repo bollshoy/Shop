@@ -20,7 +20,7 @@
 
 ### 1. Клонирование репозитория
 ```bash
-git clone https://github.com/your-username/tuff-ecommerce.git
+git clone https://github.com/bollshoy/Shop.git
 cd tuff-ecommerce
 ```
 
@@ -37,7 +37,7 @@ yarn install
 2. Добавьте в него следующую строчку с базовым URL-адресом API:
 
 ```env
-REACT_APP_API_URL=https://fakestoreapi.com
+VITE_FAKE_STORE_API=your_api_key
 ```
 
 ### 4. Запуск приложения в режиме разработки
