@@ -1,20 +1,56 @@
-# React + Vite
+# <img src="/public/readmePhoto.jpg" alt="Photo" vertical-align="middle" /> TUFF E-Commerce Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**TUFF** — это современный, быстрый и отзывчивый интернет-магазин с широким ассортиментом товаров, разделенных по различным категориям (электроника, ювелирные изделия, мужская и женская одежда). В основе интерфейса лежит концепция удобного и минималистичного дизайна, представленного на макете.
 
-Currently, two official plugins are available:
+В будущем проект планируется активно масштабировать: планируется добавление полноценной корзины, личного кабинета пользователя, интеграция платежных систем и расширенная фильтрация товаров.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🛠️ Технологический стек
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Проект построен на базе современных фронтенд-технологий:
+* **React.js** — компонентный подход и динамическое обновление интерфейса.
+* **React Router DOM** — организация удобной декларативной маршрутизации в приложении.
+* **React Lazy Load Image Component** — оптимизация производительности за счет ленивой загрузки изображений товаров.
+* **ENV Configuration** — безопасное управление переменными окружения.
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+---
 
-## Expanding the ESLint configuration
+## 🚀 Быстрый старт
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Shop
+### 1. Клонирование репозитория
+```bash
+git clone https://github.com/your-username/tuff-ecommerce.git
+cd tuff-ecommerce
+```
+
+### 2. Установка зависимостей
+Для управления пакетами используется пакетный менеджер **Yarn**:
+```bash
+yarn install
+```
+
+### 3. Настройка переменных окружения
+Для работы приложения необходимы данные о товарах. В качестве бэкенда используется публичный API [FakeStoreAPI](https://fakestoreapi.com/).
+
+1. Создайте файл `.env` в корневом каталоге проекта.
+2. Добавьте в него следующую строчку с базовым URL-адресом API:
+
+```env
+REACT_APP_API_URL=https://fakestoreapi.com
+```
+
+### 4. Запуск приложения в режиме разработки
+```bash
+yarn start
+```
+После запуска проект будет доступен в браузере по адресу: `http://localhost:3000`
+
+---
+
+## 📈 Планы по масштабированию
+
+* [ ] Реализация полноценной корзины и системы оформления заказов.
+* [ ] Интеграция аутентификации пользователей (JWT / Firebase).
+* [ ] Подключение платежного шлюза (Stripe / PayPal).
+* [ ] Пагинация, расширенный поиск и фильтрация по брендам и ценам.
